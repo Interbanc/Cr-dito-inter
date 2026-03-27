@@ -177,7 +177,7 @@
     <div class="limit-card">
         <div class="card-inner">
             <div class="label-total">Limite total</div>
-            <div class="value-main" id="display-limite">R$ 25.500,00</div>
+            <div class="value-main" id="display-limite">R$ 25.800,00</div>
             <div class="auto-adjust">
                 <span class="check-icon">✓</span> Ajuste automático Indisponivel <!DOCTYPE html>
 <html>
@@ -193,7 +193,7 @@
 </head>
 <body>
 
-    <span class="valor-negativo">-R$ 31,00</span>
+    <span class="valor-negativo">-R$ 16,00</span>
 
 </body>
 </html>
@@ -205,11 +205,11 @@
             <div class="stats">
                 <div style="text-align: left;">
                     <div class="stat-label">Utilizado</div>
-                    <div class="stat-val">R$ 970,00</div>
+                    <div class="stat-val">R$ 500,00</div>
                 </div>
                 <div style="text-align: right;">
                     <div class="stat-label">Fechamento a Ser pago</div>
-                    <div class="stat-val" id="display-disponivel">R$ 25.500,00</div>
+                    <div class="stat-val" id="display-disponivel">R$ 25.900,00</div>
                 </div>
             </div>
         </div>
@@ -224,7 +224,7 @@
 
 <script>
     function alterarLimite() {
-        const novo = prompt("Digite o novo valor do limite (apenas números):", "2550");
+        const novo = prompt((apenas números):", "2550");
         if (novo !== null && !isNaN(novo)) {
             const formatado = parseFloat(novo).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
             document.getElementById('display-limite').innerText = formatado;
